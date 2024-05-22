@@ -24,7 +24,7 @@ export function HeroSection() {
             >
                 <motion.div>
                     <motion.p className='text-2xl md:text-7xl text-start text-white pl-4 md:pl-24 pt-48 font-semibold text-play'>
-                        Le picnic pour célébrer <br /> les beaux événements
+                        Plus qu&apos;un événement <br /> une expérience
                     </motion.p>
                 </motion.div>
 

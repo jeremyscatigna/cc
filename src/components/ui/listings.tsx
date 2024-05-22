@@ -5,8 +5,8 @@ import { InfiniteMovingCards } from './infinite-moving-cards';
 
 export function Listings() {
     return (
-        <div className='rounded-md flex flex-col antialiased bg-sage dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden pt-24'>
-            <InfiniteMovingCards items={testimonials} direction='right' speed='slow' />
+        <div className='rounded-md max-w-full flex flex-col antialiased bg-sage dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden pt-24'>
+            <InfiniteMovingCards items={testimonials} direction='left' speed='slow' />
         </div>
     );
 }

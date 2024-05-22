@@ -64,24 +64,27 @@ export const InfiniteMovingCards = ({
             }
         }
     };
+
+    const texts = ["Location et Installation", "Evénement", "Personnalisation", "Sur mesure"]
+
     return (
         <div
             ref={containerRef}
             className={cn(
-                'scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
+                'scroller relative z-20 max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
                 className,
             )}
         >
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    ' flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap',
+                    ' flex min-w-full shrink-0 gap-4 py-4 max-w-full flex-nowrap',
                     start && 'animate-scroll ',
                     pauseOnHover && 'hover:[animation-play-state:paused]',
                 )}
             >
                 {items.map((item, idx) => (
-                    <div key={idx} className='min-w-[350px] col-span-1 cursor-pointer group'>
+                    <div key={idx} className='min-w-[250px] col-span-1 cursor-pointer group'>
                         <div className='flex flex-col gap-1 w-full'>
                             <div className='aspect-square w-full relative overflow-hidden rounded-xl'>
                                 <Image
@@ -91,7 +94,7 @@ export const InfiniteMovingCards = ({
                                     alt='Listing'
                                 />
                             </div>
-                            <div className='font-semibold text-lg text-inter text-white'>Vivez l&apos;inoubliable</div>
+                            <div className='font-semibold text-lg text-inter text-white'>{texts[idx]}</div>
                             
                         </div>
                     </div>

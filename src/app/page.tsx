@@ -1,4 +1,5 @@
 import Details from '@/components/details-section';
+import FooterSection from '@/components/footer-section';
 import { HeroSection } from '@/components/hero-section';
 import LifestyleSection from '@/components/lifestyle-section';
 import Nav from '@/components/nav';
@@ -11,6 +12,8 @@ export default function Home() {
 
             <Details />
             <LifestyleSection />
+
+            <FooterSection />
         </main>
     );
 }

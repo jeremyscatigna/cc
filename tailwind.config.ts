@@ -47,7 +47,7 @@ const config = {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
-                sage: "#DFE6DA"
+                sage: "#D6DFD0"
             },
             borderRadius: {
                 lg: 'var(--radius)',
