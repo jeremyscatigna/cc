@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { InfiniteMovingCards } from './infinite-moving-cards';
 
 export function Listings() {
@@ -26,6 +26,11 @@ const testimonials = [
         quote: 'All that we see or seem is but a dream within a dream.',
         name: 'Edgar Allan Poe',
         title: 'A Dream Within a Dream',
+    },
+    {
+        quote: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
+        name: 'Jane Austen',
+        title: 'Pride and Prejudice',
     },
     {
         quote: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',

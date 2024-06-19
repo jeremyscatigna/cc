@@ -47,7 +47,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
                         <BlurImage card={card} />
 
                         <div className='absolute bottom-0 left-0 p-8 bg-gradient-to-b from-transparent via-black/40 to-black/80 w-full'>
-                            <h1 className='text-white text-xl font-bold'>{card.title}</h1>
+                            {selected?.id !== card.id && <h1 className='text-white text-xl font-bold'>{card.title}</h1>}
                         </div>
                     </motion.div>
                 </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Nav() {
@@ -10,12 +11,12 @@ export default function Nav() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const menus = ['A PROPOS', 'CONCEPT', 'FORMULES', 'OPTIONS', 'RESTAURATION', 'MARIAGE', 'DEMANDE DE DEVIS'];
+    const menus = ['ACCEUIL', 'FORMULES', 'FORFAITS', 'OPTIONS', 'DEVIS', 'CONTACT', 'PARTENAIRES'];
 
     return (
         <nav className='absolute top-0 left-0 flex items-center justify-between w-full text-white z-50 pr-4 md:px-24'>
             <div className='w-full flex flex-wrap items-center justify-between mx-auto pt-4'>
-                <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse font-bold pl-4 md:pl-0'>
+                <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse font-bold pl-2 md:pl-0'>
                     cc&co
                 </a>
                 <button
@@ -42,9 +43,9 @@ export default function Nav() {
                     <ul className='flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent '>
                         {menus.map((menu) => (
                             <li key={menu} className='py-2 text-inter capitalize'>
-                                <a href='#' className='hover:text-gray-100'>
+                                <Link href={menu.toLowerCase()} className='hover:text-gray-100'>
                                     {menu.toLowerCase()}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

@@ -8,9 +8,9 @@ export default function LifestyleSection() {
             </h1>
 
             <p className='text-lato text-black mt-12 max-w-4xl text-center text-lg leading-8 px-4 md:px-0'>
-                Nous créons des événements en petit comité dans une démarche éco-responsable pour vous offrir un gain de temps et d&apos;énergie
-                ainsi qu&apos;un moment inoubliable pour vous et vos proches. Vivez l&apos;expérience en toute saison, en extérieur comme en
-                intérieur.
+                Nous créons des événements en petit comité dans une démarche éco-responsable pour vous offrir un gain de temps et
+                d&apos;énergie ainsi qu&apos;un moment inoubliable pour vous et vos proches. Vivez l&apos;expérience en toute saison, en
+                extérieur comme en intérieur.
             </p>
 
             <div className='h-screen py-20 w-full relative'>
@@ -23,13 +23,9 @@ export default function LifestyleSection() {
 const SkeletonOne = () => {
     return (
         <div>
-            <p className='font-bold text-4xl text-white'>Mariage</p>
+            <p className='font-bold text-4xl text-white'>Location</p>
             <p className='font-normal text-base text-white'></p>
-            <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>
-                Step into an era of grandeur and elegance with our exclusive collection of domains and castles. Each property exudes
-                history, luxury, and timeless sophistication. From majestic estates with sprawling grounds to enchanting castles steeped in
-                centuries of tradition, these properties offer a glimpse into a world of opulence and refinement.
-            </p>
+            <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>Art de la table, éléments de décoration, mobilier.</p>
         </div>
     );
 };
@@ -37,25 +33,19 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
     return (
         <div>
-            <p className='font-bold text-4xl text-white'>EVJF</p>
+            <p className='font-bold text-4xl text-white'>Personnalisation</p>
             <p className='font-normal text-base text-white'></p>
-            <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>
-                Indulge in the ultimate luxury with our selection of dream homes, meticulously crafted to fulfill your every desire.
-                Experience unparalleled comfort, style, and modern amenities in these architectural masterpieces. Whether you seek sleek
-                contemporary designs or classic elegance, your dream home awaits.
-            </p>
+            <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>Signalétique, papeterie, cadeaux personnalisés.</p>
         </div>
     );
 };
 const SkeletonThree = () => {
     return (
         <div>
-            <p className='font-bold text-4xl text-white'>Anniversaire</p>
+            <p className='font-bold text-4xl text-white'>Installation</p>
             <p className='font-normal text-base text-white'></p>
             <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>
-                Create cherished memories with your loved ones in our charming family cottages. Nestled amidst picturesque landscapes and
-                serene surroundings, these cozy retreats offer a perfect blend of comfort and tranquility. Ideal for family getaways or
-                peaceful weekends, our cottages provide a warm and inviting atmosphere where memories are made.
+                Installation de décoration sur place et sur mesure (mariage, anniversaire, evjf, baptême...)
             </p>
         </div>
     );
@@ -63,12 +53,10 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <p className='font-bold text-4xl text-white'>Date</p>
+            <p className='font-bold text-4xl text-white'>Organisation</p>
             <p className='font-normal text-base text-white'></p>
             <p className='font-normal text-base my-4 max-w-lg text-neutral-200'>
-                Embrace contemporary living in our collection of modern residences, where sleek design meets functionality. These properties
-                showcase cutting-edge architecture, innovative features, and state-of-the-art technology. From urban lofts to minimalist
-                masterpieces, immerse yourself in the epitome of modern living and urban sophistication.
+                &quot;Les picnic chic&quot;, les demandes en mariage, les dates amoureux, les evjf.
             </p>
         </div>
     );
@@ -80,27 +68,27 @@ const cards = [
         content: <SkeletonOne />,
         className: 'md:col-span-2',
         thumbnail: '/picnic1.jpeg',
-        title: 'Mariage',
+        title: 'Location',
     },
     {
         id: 2,
         content: <SkeletonTwo />,
         className: 'col-span-1',
         thumbnail: '/picnic2.jpeg',
-        title: 'EVJF',
+        title: 'Personnalisation',
     },
     {
         id: 3,
         content: <SkeletonThree />,
         className: 'col-span-1',
         thumbnail: '/picnic3.jpeg',
-        title: 'Anniversaire',
+        title: 'Installation',
     },
     {
         id: 4,
         content: <SkeletonFour />,
         className: 'md:col-span-2',
         thumbnail: '/picnic4.jpeg',
-        title: 'Date',
+        title: 'Organisation',
     },
 ];

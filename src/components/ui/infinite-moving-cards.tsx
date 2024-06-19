@@ -65,7 +65,7 @@ export const InfiniteMovingCards = ({
         }
     };
 
-    const texts = ["Location et Installation", "Evénement", "Personnalisation", "Sur mesure"]
+    const texts = ["Picnic chic", "Dates amoureux", "Demande en mariage", "Anniversaire", "Mariage"]
 
     return (
         <div
